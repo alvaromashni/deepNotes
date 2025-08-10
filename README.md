@@ -47,11 +47,6 @@ app/src/main/java/br/com/deepnotes/
 - **StateFlow + collectAsStateWithLifecycle**: UI reativa e lifecycle-aware.  
 - **Dynamic Color**: integra com paleta do sistema (Monet) em Android 12+; fallback claro/escuro.
 
-## Pontos para entrevista
-- **UNDO**: UI dispara `delete` → Snackbar → se **DESFAZER**, VM chama `restore()` no repo (reinsere a mesma `Note`).  
-- **MVVM**: UI “burra”; VM orquestra; Repository decide fonte; DAO só SQL.  
-- Extensões: busca, ordenação, tema — tudo sem mexer na base.
-
 ## Roadmap curto
 - [ ] **Swipe-to-delete** com UNDO  
 - [ ] **Testes de DAO** (Room in-memory)  
